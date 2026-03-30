@@ -2,46 +2,31 @@
 
 Extract structured classified listings from [DBA.dk](https://www.dba.dk) — Denmark's largest online marketplace with 2M+ monthly visitors. Get prices, condition, GPS coordinates, up to 10 images, seller info, and full descriptions as clean JSON.
 
-**[Run on Apify →](https://apify.com/blackfalcondata/dba-listings-scraper)**
+**[DBA.dk Marketplace Listings Scraper on Apify →](https://apify.com/blackfalcondata/dba-listings-scraper)**
 
 ---
 
 ## Key features
 
-🔍 **Search with filters**
 
-Search by keyword across all DBA categories. Filter by condition, region, price range, seller type, and sort order.
 
-📦 **35 structured output fields**
+**Search with filters** — Search by keyword and location. Filter by category, condition, region, and more.
 
-Every listing includes price, condition (normalized), brand, category path, GPS coordinates, up to 10 images, seller type (private/dealer), shipping and buy-now availability, and product attributes.
+**Detail enrichment** — Fetch full job descriptions, structured metadata for each listing.
 
-🔄 **Incremental mode**
-
-Only get new or changed listings since your last run. Content hash per listing — no duplicates, no re-processing.
-
-⚡ **Compact output for AI agents**
-
-Core-fields-only mode optimized for MCP and AI agent workflows. Description truncation to control output size.
+**Incremental mode** — Only get new or changed listings since your last run. Content hash per listing — no duplicates, no re-processing.
 
 ---
 
 ## Use cases
 
-**Price monitoring and market research**
-Track prices across DBA categories over time. Monitor competitor pricing, identify undervalued items, or analyze market trends for specific product segments in Denmark.
 
-**Inventory and supply sourcing**
-Find specific products, parts, or materials across Denmark. Filter by region and price to locate the best deals near you. GPS coordinates enable distance-based filtering in your pipeline.
 
-**Reseller and arbitrage intelligence**
-Compare DBA prices against retail or other marketplaces. Identify products selling below market value for resale opportunities. Track sold listings via the `disposed` flag.
+**Data pipeline automation**
+Integrate with your ETL pipeline to collect structured listings from dba.dk on a schedule. Export to CSV, JSON, or directly to your database. Use compact mode to control output size.
 
-**AI-agent and MCP workflows**
-Feed compact, structured listing data into ranking, classification, or recommendation pipelines. The 35-field schema with GPS coordinates enables location-aware agent workflows.
-
-**Recurring alerts and monitoring**
-Use incremental mode with scheduled runs to get notified about new listings matching your criteria — ideal for rare items, collectibles, or specific product searches.
+**Market research**
+Monitor listings, track trends, and analyze market dynamics with structured, deduplicated data from dba.dk.
 
 ---
 
@@ -109,15 +94,11 @@ This actor accesses publicly available data. Always check the target site's term
 
 ## Related products by Black Falcon Data
 
-| Product | Description |
-|:--------|:------------|
-| [Bilbasen Scraper](https://github.com/BlackFalconData-org/bilbasen-scraper) | Denmark's largest car marketplace (same owner as DBA.dk) |
-| [StepStone Jobs API](https://github.com/BlackFalconData-org/stepstone-jobs-api) | Job listings from 18 European portals |
-| [Company Jobs Tracker](https://github.com/BlackFalconData-org/company-jobs-tracker-api) | Track new/removed jobs per company |
-| [Indeed Jobs Feed](https://github.com/BlackFalconData-org/indeed-jobs-feed) | Indeed job listings with salary data |
-| [Glassdoor Jobs Feed](https://github.com/BlackFalconData-org/glassdoor-jobs-feed) | Glassdoor listings with company ratings |
-| [Arbeitsagentur Jobs Feed](https://github.com/BlackFalconData-org/arbeitsagentur-jobs-feed) | Germany's federal job portal (1M+ listings) |
-| [Naukri Jobs Feed](https://github.com/BlackFalconData-org/naukri-jobs-feed) | India's largest job portal |
+
+
+- [StepStone Scraper](https://github.com/BlackFalconData-org/stepstone-scraper) — Job listings from 18 European portals
+- [Indeed Job Scraper](https://github.com/BlackFalconData-org/indeed-job-scraper) — Indeed job listings with salary data
+- [Glassdoor Job Scraper](https://github.com/BlackFalconData-org/glassdoor-job-scraper) — Glassdoor listings with company ratings
 
 ---
 
