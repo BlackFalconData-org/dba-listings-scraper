@@ -2,11 +2,12 @@
 
 Extract structured classified listings from [DBA.dk](https://www.dba.dk) — Denmark's largest online marketplace with 2M+ monthly visitors. Get prices, condition, GPS coordinates, up to 10 images, seller info, and full descriptions as clean JSON.
 
-**[DBA.dk Marketplace Listings Scraper on Apify →](https://apify.com/blackfalcondata/dba-listings-scraper)**
+**[DBA Scraper - Denmark’s Largest Marketplace on Apify →](https://apify.com/blackfalcondata/dba-listings-scraper)**
 
 ---
 
 ## Key features
+
 
 
 
@@ -19,6 +20,7 @@ Extract structured classified listings from [DBA.dk](https://www.dba.dk) — Den
 ---
 
 ## Use cases
+
 
 
 
@@ -93,6 +95,7 @@ This actor accesses publicly available data. Always check the target site's term
 ---
 
 ## Related products by Black Falcon Data
+
 
 
 
